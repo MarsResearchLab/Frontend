@@ -3,20 +3,18 @@ import downarrow from "../assets/down-arrow.svg"
 import search from "../assets/search.svg"
 import kakaologo from "../assets/kakao_logo.png"
 import "./TopBar.css"
-import { useState } from "react"
 
 
-function TopBar() {
+function TopBar(props) {
 
-    const [viewmode, setViewmode] = useState(0);
     const viewmodeList = ["전체종목", "북마크"];
 
     return (
         <div className="topbar">
             <img src={logo} className="topbar-logo"></img>
-            <div className="topbar-viewmode">{viewmodeList[viewmode]}</div>
-            <img src={downarrow} className="topbar-downarrow"></img>
-            <div class="topbar-search">
+            <div className="topbar-viewmode" onClick={props.handleClick}>{viewmodeList[props.viewmode]}</div>
+            <img src={downarrow} onClick={props.handleClick} className="topbar-downarrow"></img>
+            <div className="topbar-search">
                 <img src={search} />
                 <input type="text" placeholder="검색어 입력" />
             </div>
@@ -25,5 +23,6 @@ function TopBar() {
         </div>
     )
 }
+
 
 export default TopBar;

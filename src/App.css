@@ -1,3 +1,16 @@
 .App {
+  position: relative;
   margin: 0 auto;
+}
+
+.app-viewmode-modal {
+  position: absolute;
+  width: 182px;
+  height: 172px;
+  border: 1px solid #DD6532;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  top: 105px;
+  left: 209px;
+  z-index: 1;
 }

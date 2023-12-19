@@ -25,7 +25,9 @@ function App() {
       <div className="app-viewmode-modal" style={{display: viewmodeVisible ? "block" : "none"}}>
         <ViewmodeModal handleClick={handleViewmode} viewmode={viewmode}></ViewmodeModal>
       </div>
-
+      <div className='app-main-page'>
+      <MainPage></MainPage>
+      </div>
     </div>
   );
 }

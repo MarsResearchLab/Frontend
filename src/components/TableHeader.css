@@ -1,0 +1,45 @@
+.tableheader {
+    display: flex;
+    height: 80px;
+    flex-direction: row;
+    color: #000000;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-top: 3px solid #DD6532;
+    background-color: rgba(255, 159, 109, 0.3);
+}
+
+.tableheader-id {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tableheader-code {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tableheader-name {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tableheader-price {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}

@@ -2,6 +2,7 @@ import './App.css';
 import TopBar from './components/TopBar';
 import ViewmodeModal from './components/ViewmodeModal';
 import { useState } from "react"
+import MainPage from './pages/MainPage';
 
 function App() {
 

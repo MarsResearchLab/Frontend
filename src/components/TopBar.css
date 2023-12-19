@@ -14,6 +14,8 @@
 
 .topbar-viewmode {
   font-size: 32px;
+  width: 120px;
+  text-align: center;
   font-family: Inter;
   font-size: 32px;
   font-weight: 400;
@@ -33,8 +35,9 @@
 
 .topbar-search {
   display: flex;
-  width: 1240px;
+  width: fit-content;
   height: 85px;
+  flex-grow: 1;
   border-radius: 25px;
   background-color: #FFFFFF;
   margin: auto 0px;
@@ -73,6 +76,7 @@
   color: #FFFFFF;
   margin: auto 0px;
   margin-left: 39px;
+  width: 118px;
 }
 
 .topbar-kakaologo {
@@ -80,4 +84,5 @@
   height: 38px;
   margin: auto 0px;
   margin-left: 8px;
+  margin-right: 32px;
 }

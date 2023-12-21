@@ -1,27 +1,23 @@
+// TableRow.js
+import React from 'react';
 import "./TableRow.css"
+import { useNavigate } from 'react-router-dom';
 
+function TableRow({ row }) {
+  const navigate = useNavigate();
 
-function TableRow(props) {
+  const goToStockDetail = () => {
+    navigate(`/stocks/${row.id}`);
+  };
 
-    var data = props.row;
-
-    return (
-        <div className="tablerow">
-            <div className="tablerow-id">
-                {data.id}
-            </div>
-            <div className="tablerow-code">
-                {data.code}
-            </div>
-            <div className="tablerow-name">
-                {data.name}
-            </div>
-            <div className="tablerow-price">
-                {data.price}
-            </div>
-        </div>
-    )
+  return (
+    <div className="tablerow">
+      <div className="tablerow-id">{row.id}</div>
+      <div className="tablerow-code">{row.code}</div>
+      <div className="tablerow-name" onClick={goToStockDetail}>{row.name}</div>
+      <div className="tablerow-price">{row.latestClosingPrice}</div>
+    </div>
+  );
 }
-
 
 export default TableRow;
